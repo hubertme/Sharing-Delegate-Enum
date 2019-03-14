@@ -32,6 +32,7 @@ class SecondViewController: UIViewController {
         colourButtons.forEach { (button) in
             if button.tag == sender.tag {
                 delegate?.changeBackgroundColour(to: button.backgroundColor ?? .white)
+                self.navigationController?.popViewController(animated: true)
             }
         }
     }
