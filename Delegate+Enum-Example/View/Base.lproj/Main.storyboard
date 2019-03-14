@@ -52,34 +52,49 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="asx-3w-Nok"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="handleColourButtonTapped:" destination="eAG-mv-Rxb" eventType="touchUpInside" id="h9p-Xe-cV1"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBl-pr-eoo">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBl-pr-eoo">
                                         <rect key="frame" x="0.0" y="96" width="235" height="80"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="DFI-ku-f3i"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="handleColourButtonTapped:" destination="eAG-mv-Rxb" eventType="touchUpInside" id="KMh-pc-S57"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgC-57-Ivb">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgC-57-Ivb">
                                         <rect key="frame" x="0.0" y="192" width="235" height="80"/>
                                         <color key="backgroundColor" red="0.30980392159999998" green="0.50588235290000005" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="lgT-uZ-VvR"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="handleColourButtonTapped:" destination="eAG-mv-Rxb" eventType="touchUpInside" id="xHg-Ii-ASl"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7q-hd-ZVt">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7q-hd-ZVt">
                                         <rect key="frame" x="0.0" y="288" width="235" height="80"/>
                                         <color key="backgroundColor" red="1" green="0.9819514318231074" blue="0.30782671151551644" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="lkA-7Y-Qew"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="handleColourButtonTapped:" destination="eAG-mv-Rxb" eventType="touchUpInside" id="t4p-2l-Bis"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXL-fF-6Ar">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXL-fF-6Ar">
                                         <rect key="frame" x="0.0" y="384" width="235" height="80"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="1OA-2P-oIr"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="handleColourButtonTapped:" destination="eAG-mv-Rxb" eventType="touchUpInside" id="uha-wN-xlv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

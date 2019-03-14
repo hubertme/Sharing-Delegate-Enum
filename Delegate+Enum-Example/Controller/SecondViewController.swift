@@ -8,6 +8,14 @@
 
 import UIKit
 
+enum SecondVCButtonsOrder: Int {
+    case red = 0
+    case blue = 1
+    case green = 2
+    case yellow = 3
+    case black = 4
+}
+
 class SecondViewController: UIViewController {
     
     // MARK: - Outlets
@@ -18,8 +26,20 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Sort colour buttons for security
+        colourButtons.sort { (button1, button2) -> Bool in
+            if button1.tag < button2.tag {
+                return true
+            }
+            return false
+        }
+        
+        print(colourButtons)
     }
     
     // MARK: - Actions
+    @IBAction func handleColourButtonTapped(_ sender: UIButton) {
+        
+    }
 
 }
