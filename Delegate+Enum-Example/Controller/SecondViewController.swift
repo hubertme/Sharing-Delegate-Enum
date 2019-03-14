@@ -24,7 +24,6 @@ class SecondViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     // MARK: - Actions

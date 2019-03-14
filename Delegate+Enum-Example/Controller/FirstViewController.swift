@@ -13,7 +13,6 @@ class FirstViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
