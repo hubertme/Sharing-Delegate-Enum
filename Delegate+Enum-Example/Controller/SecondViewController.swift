@@ -33,13 +33,17 @@ class SecondViewController: UIViewController {
             }
             return false
         }
-        
-        print(colourButtons)
     }
     
     // MARK: - Actions
     @IBAction func handleColourButtonTapped(_ sender: UIButton) {
-        
+//        var colourOrder: SecondVCButtonsOrder
+        colourButtons.forEach { (button) in
+            if button.tag == sender.tag {
+                guard let colourOrder = SecondVCButtonsOrder(rawValue: button.tag) else { return }
+                print(colourOrder)
+            }
+        }
     }
 
 }
