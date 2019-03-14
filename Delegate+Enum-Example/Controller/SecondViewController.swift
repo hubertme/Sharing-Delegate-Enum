@@ -8,15 +8,14 @@
 
 import UIKit
 
-enum SecondVCButtonsOrder: Int {
-    case red = 0
-    case blue = 1
-    case green = 2
-    case yellow = 3
-    case black = 4
+protocol SecondViewControllerDelegate: AnyObject {
+    func changeBackgroundColour(to backgroundColour: UIColor)
 }
 
 class SecondViewController: UIViewController {
+    
+    // MARK: - Attributes
+    var delegate: SecondViewControllerDelegate?
     
     // MARK: - Outlets
     @IBOutlet var colourButtons: [UIButton]!
@@ -26,22 +25,13 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Sort colour buttons for security
-        colourButtons.sort { (button1, button2) -> Bool in
-            if button1.tag < button2.tag {
-                return true
-            }
-            return false
-        }
     }
     
     // MARK: - Actions
     @IBAction func handleColourButtonTapped(_ sender: UIButton) {
-//        var colourOrder: SecondVCButtonsOrder
         colourButtons.forEach { (button) in
             if button.tag == sender.tag {
-                guard let colourOrder = SecondVCButtonsOrder(rawValue: button.tag) else { return }
-                print(colourOrder)
+                delegate?.changeBackgroundColour(to: button.backgroundColor ?? .white)
             }
         }
     }

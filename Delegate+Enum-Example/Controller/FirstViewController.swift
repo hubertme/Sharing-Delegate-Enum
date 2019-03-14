@@ -20,5 +20,19 @@ class FirstViewController: UIViewController {
     @IBAction func handleEditButtonTapped(_ sender: UIBarButtonItem) {
         self.performSegue(withIdentifier: SegueIdentifier.firstToSecond.rawValue, sender: self)
     }
+    
+    // MARK: - Methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SegueIdentifier.firstToSecond.rawValue {
+            let destinationVC = segue.destination as! SecondViewController
+            destinationVC.delegate = self
+        }
+    }
+}
+
+extension FirstViewController: SecondViewControllerDelegate {
+    func changeBackgroundColour(to backgroundColour: UIColor) {
+        self.view.backgroundColor = backgroundColour
+    }
 }
 
