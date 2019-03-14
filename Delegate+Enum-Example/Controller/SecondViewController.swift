@@ -9,10 +9,17 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    // MARK: - Outlets
+    @IBOutlet var colourButtons: [UIButton]!
+    @IBOutlet weak var buttonsStackView: UIStackView!
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    // MARK: - Actions
 
 }
