@@ -18,7 +18,7 @@ class FirstViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleEditButtonTapped(_ sender: UIBarButtonItem) {
-        
+        self.performSegue(withIdentifier: SegueIdentifier.firstToSecond.rawValue, sender: self)
     }
 }
 
