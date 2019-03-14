@@ -16,6 +16,11 @@ class FirstViewController: UIViewController {
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.view.backgroundColor = .white
+    }
+    
     // MARK: - Actions
     @IBAction func handleEditButtonTapped(_ sender: UIBarButtonItem) {
         self.performSegue(withIdentifier: SegueIdentifier.firstToSecond.rawValue, sender: self)
