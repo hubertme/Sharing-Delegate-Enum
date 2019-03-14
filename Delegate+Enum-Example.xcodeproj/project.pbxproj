@@ -54,14 +54,30 @@
 		E4B40568223AAD580002E6EB /* Delegate+Enum-Example */ = {
 			isa = PBXGroup;
 			children = (
+				E4B4057C223AADD80002E6EB /* View */,
+				E4B4057B223AADD60002E6EB /* Controller */,
 				E4B40569223AAD580002E6EB /* AppDelegate.swift */,
-				E4B4056B223AAD580002E6EB /* ViewController.swift */,
-				E4B4056D223AAD580002E6EB /* Main.storyboard */,
 				E4B40570223AAD5A0002E6EB /* Assets.xcassets */,
-				E4B40572223AAD5A0002E6EB /* LaunchScreen.storyboard */,
 				E4B40575223AAD5A0002E6EB /* Info.plist */,
 			);
 			path = "Delegate+Enum-Example";
+			sourceTree = "<group>";
+		};
+		E4B4057B223AADD60002E6EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4B4056B223AAD580002E6EB /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4B4057C223AADD80002E6EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4B4056D223AAD580002E6EB /* Main.storyboard */,
+				E4B40572223AAD5A0002E6EB /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
