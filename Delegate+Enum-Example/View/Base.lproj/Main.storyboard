@@ -103,7 +103,7 @@
                         <constraints>
                             <constraint firstItem="0zq-4a-Zyh" firstAttribute="top" secondItem="reS-jS-zO4" secondAttribute="top" constant="71" id="DqP-dD-Nv9"/>
                             <constraint firstItem="reS-jS-zO4" firstAttribute="trailing" secondItem="0zq-4a-Zyh" secondAttribute="trailing" constant="70" id="DtZ-Hl-bBE"/>
-                            <constraint firstItem="reS-jS-zO4" firstAttribute="bottom" secondItem="0zq-4a-Zyh" secondAttribute="bottom" constant="68" id="HqY-KW-X77"/>
+                            <constraint firstItem="reS-jS-zO4" firstAttribute="bottom" secondItem="0zq-4a-Zyh" secondAttribute="bottom" priority="750" constant="68" id="HqY-KW-X77"/>
                             <constraint firstItem="0zq-4a-Zyh" firstAttribute="leading" secondItem="reS-jS-zO4" secondAttribute="leading" constant="70" id="Tyq-xq-u3p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="reS-jS-zO4"/>
