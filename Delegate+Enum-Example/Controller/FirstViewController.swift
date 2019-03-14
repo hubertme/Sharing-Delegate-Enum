@@ -9,11 +9,16 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
+    
+    // MARK: - Actions
+    @IBAction func handleEditButtonTapped(_ sender: UIBarButtonItem) {
+        
+    }
 }
 

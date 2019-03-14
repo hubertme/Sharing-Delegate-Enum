@@ -20,7 +20,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9Sn-iI-50d"/>
+                    <navigationItem key="navigationItem" id="9Sn-iI-50d">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="6c1-Je-wWr">
+                            <connections>
+                                <action selector="handleEditButtonTapped:" destination="BYZ-38-t0r" id="PvJ-EZ-ZHR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="eAG-mv-Rxb" kind="show" identifier="segueFirstToSecond" id="mvS-2L-Kb8"/>
                     </connections>
